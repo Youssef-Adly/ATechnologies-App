@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "foodDeliverApp": {
+    "atechnologies-app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ATechnologies-App",
+            "outputPath": "dist/atechnologies-app",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": ["zone.js"],
@@ -53,10 +53,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "ATechnologies:build:production"
+              "buildTarget": "atechnologies-app:build:production"
             },
             "development": {
-              "buildTarget": "ATechnologies:build:development"
+              "buildTarget": "atechnologies-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -64,7 +64,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "ATechnologies:build"
+            "buildTarget": "atechnologies-app:build"
           }
         },
         "test": {

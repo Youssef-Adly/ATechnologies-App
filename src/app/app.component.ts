@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { NavBarComponent } from './Components/nav-bar/nav-bar.component';
 import { LandingPageComponent } from './Pages/landing-page/landing-page.component';
-import { FooterComponent } from './Components/footer/footer.component';
+import { ChartComponent } from './Components/chart/chart.component';
+import { CardComponent } from './Components/card/card.component';
+import { TableComponent } from './Components/table/table.component';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +12,10 @@ import { FooterComponent } from './Components/footer/footer.component';
   imports: [
     CommonModule,
     RouterOutlet,
-    NavBarComponent,
     LandingPageComponent,
-    FooterComponent,
+    ChartComponent,
+    CardComponent,
+    TableComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
