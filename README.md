@@ -1,32 +1,68 @@
 # packeges installled
+
 1- bootstrap
+2- echarts
+3- file-saver
+4- ngx-filesaver
+5- ngx-echarts
+6- primeng
+7- angularx-qrcode
 
-# HealthCareApp
+# A-Technologies-App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.10.
+This project is a Task from A-Technologies Company for an Angular Developer Position
 
-## Development server
+Task is to Design and develop a responsive single web page using Angular Framework
+that allows users to view and manage tickets sales.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+[Figma Design](https://www.figma.com/design/sYuphv7GfdYpBvyYouXqZf/Frontend-Assignment?node-id=0-1&t=qn6z2aspGmImeflQ-1)
 
-## Code scaffolding
+## Instructions
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1.  Implement the Chart using Echarts library only and make sure to
+    enhance and modify its styling to be an exact view of the Figma
+    design. (Don’t use an Image)
+2.  Implement a copy functionality when pressing on the copy icon near text.
+3.  Implement a QR Code using any proper Angular QR Code library. (Don’t
+    use an Image)
+4.  Implement the table using Primeng Tables.
+5.  Implement a Primeng tooltip.
+6.  Add Hover for all buttons.
+7.  Implement a Sort by functionality in the table.
+8.  For the download button at the last column, implement a file download service using
+    the NGX filesaver.
+9.  Use the exact fonts used in Figma (Neo Sans Arabic, Inter)
+10. Pay great attention to the font sizes, elements sizes, margins and paddings.
+11. Additional Note:
+    i. Each part done will be considered in the evaluation.
+    ii. Each part added like animation over the task will be considered in the
+    evaluation.
 
-## Build
+## Technical Instructions:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+A- Implement the following components (Pay great attention to the styling):
 
-## Running unit tests
+1. Chart Component:
+   • A component for the echarts Line Chart.
+2. Card Component:
+   • A component for the Card view
+3. Table Component:
+   • A component to handle the Table view.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+B- Responsive:
+• Handle media queries from 300px to 2000px (the design should be responsive
+and mobile friendly)
+• Handle different view-ports:
 
-## Running end-to-end tests
+1. Mobile (portrait/landscape)
+2. Tablet (portrait/landscape)
+3. Desktop/Laptop
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+C- Responsive (Arabic/English):
+• Implement RTL/LTR support.
 
-## Further help
+## Development Link
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+[https://a-technologies-app.vercel.app/home](https://a-technologies-app.vercel.app/home)
 
-# Health-Care-App
+# A-Technologies-App
