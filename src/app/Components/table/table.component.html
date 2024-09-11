@@ -3,31 +3,34 @@
     [value]="customers"
     [paginator]="true"
     [showCurrentPageReport]="true"
-    [tableStyle]="{ 'min-width': '50rem', 'font-weight': 'bold' }"
+    [tableStyle]="{
+      'min-width': '50rem',
+      'font-weight': 'bold',
+      'text-align': 'center'
+    }"
     currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
     [rows]="4"
-    [tableStyle]="{ 'min-width': '50rem', 'text-align': 'center' }"
     [rowsPerPageOptions]="[4, 8, 12]"
   >
     <ng-template pTemplate="header">
       <tr style="background-color: #e3e4e9">
-        <th>التذكره</th>
-        <th>عدد مرات الشراء</th>
-        <th>عدد الاشخاص</th>
-        <th>السينمات</th>
-        <th pSortableColumn="price">
+        <th style="font-weight: 400" class="text-muted">التذكره</th>
+        <th style="font-weight: 400" class="text-muted">عدد مرات الشراء</th>
+        <th style="font-weight: 400" class="text-muted">عدد الاشخاص</th>
+        <th style="font-weight: 400" class="text-muted">السينمات</th>
+        <th style="font-weight: 400" class="text-muted" pSortableColumn="price">
           قيمه التذكره
           <p-sortIcon field="price" />
         </th>
-        <th>رقم التذكره</th>
-        <th>المستخدم</th>
-        <th>#</th>
+        <th style="font-weight: 400" class="text-muted">رقم التذكره</th>
+        <th style="font-weight: 400" class="text-muted">المستخدم</th>
+        <th style="font-weight: 400" class="text-muted">#</th>
       </tr>
     </ng-template>
     <ng-template pTemplate="body" let-customer>
-      <tr>
+      <tr style="font-weight: bold">
         <td
-          style="max-width: 200px"
+          style="width: 250px"
           class="d-flex align-items-center justify-content-between"
         >
           <button class="btn" type="button" (click)="downloadFile()">
@@ -88,23 +91,27 @@
             </svg>
           </div>
         </td>
-        <td>{{ customer.numofBuys }}</td>
-        <td>{{ customer.numOfPeople }}</td>
+        <td class="text-center">{{ customer.numofBuys }}</td>
+        <td class="text-center">{{ customer.numOfPeople }}</td>
         <td
-          pInputText
+          class="text-center"
           pTooltip="صيدناوى مول , برج العرب"
           tooltipPosition="top"
-          placeholder="Top"
+          style="width: 250px"
         >
           {{ customer.address }}
         </td>
-        <td>{{ customer.price | currency }}</td>
-        <td>{{ customer.ticketNumber }}</td>
-        <td class="d-flex align-items-center gap-2">
+        <td class="text-center">{{ customer.price | currency }}</td>
+        <td class="text-center">{{ customer.ticketNumber }}</td>
+        <td class="d-flex align-items-center gap-2 text-center">
           <div>
-            {{ customer.name }}
+            <span>{{ customer.name }}</span>
             <br />
-            {{ customer.phone }}
+            <span
+              style="font-weight: 400; font-size: 13px"
+              class="text-muted"
+              >{{ customer.phone }}</span
+            >
           </div>
           <p-avatar
             image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"

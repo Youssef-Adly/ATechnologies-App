@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&display=swap");
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
 * {
   box-sizing: border-box;
-  font-family: Neo Sans Arabic;
+  font-family: "Noto Sans Arabic", sans-serif;
   transition: all 0.3s;
 }

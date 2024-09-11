@@ -18,6 +18,21 @@ export class ChartComponent {
       text: 'إحصائيات إستخدام القسيمة',
       left: 'right',
     },
+    tooltip: {
+      trigger: 'axis',
+      axisPointer: {
+        type: 'shadow',
+      },
+      formatter: function (params: any) {
+        return params.value;
+      },
+    },
+    grid: {
+      left: '3%',
+      right: '4%',
+      bottom: '3%',
+      containLabel: true,
+    },
     xAxis: {
       type: 'category',
       boundaryGap: false,

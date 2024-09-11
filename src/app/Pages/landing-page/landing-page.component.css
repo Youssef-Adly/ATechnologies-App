@@ -1,0 +1,10 @@
+.chart {
+  width: auto;
+  flex-grow: 1;
+}
+@media (max-width: 540px) {
+  .chart {
+    width: 100%;
+    flex-grow: 0;
+  }
+}
