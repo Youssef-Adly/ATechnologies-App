@@ -8,3 +8,26 @@
     flex-grow: 0;
   }
 }
+
+.button-1 {
+  width: 100px;
+  height: 35px;
+  padding: 13px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  background: #8a74f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fcfcfc;
+  text-decoration: none;
+}
+
+.button-1:hover {
+  background: #8a74f9d4;
+}
+
+.switched:checked {
+  background-color: #8a74f9;
+}
