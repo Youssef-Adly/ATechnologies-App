@@ -21,11 +21,15 @@ export class ChartComponent {
     tooltip: {
       trigger: 'axis',
       axisPointer: {
-        type: 'shadow',
+        type: 'line',
       },
       formatter: function (params: any) {
-        return params.value;
+        // Assuming you have a single data series
+        return `أستخدام ${params[0].value}`;
       },
+      backgroundColor: '#1E1B39',
+      borderRadius: 10,
+      textStyle: { color: 'white', fontSize: '12.11px' },
     },
     grid: {
       left: '3%',
@@ -42,7 +46,8 @@ export class ChartComponent {
         snap: true,
         lineStyle: {
           color: '#7581BD',
-          width: 2,
+          width: 5,
+          type: 'solid',
         },
         label: {
           show: true,
@@ -50,10 +55,12 @@ export class ChartComponent {
             return params.value;
           },
           backgroundColor: '#7581BD',
+          borderRadius: 50,
         },
         handle: {
           show: true,
           color: '#7581BD',
+          icon: '#8A74F9',
         },
       },
       data: [
@@ -76,7 +83,7 @@ export class ChartComponent {
     },
     series: [
       {
-        data: [820, 820, 820, 820, 820, 820, 932, 901, 934, 1290, 1330, 1320],
+        data: [130, 190, 90, 150, 250, 180, 225, 200, 120, 120, 100, 230],
         type: 'line',
         smooth: true,
         lineStyle: {
