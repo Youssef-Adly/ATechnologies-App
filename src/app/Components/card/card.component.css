@@ -1,5 +1,17 @@
-/* .copy:hover {
-  background-color: #eee;
-  border-radius: 50%;
-  aspect-ratio: 1;
-} */
+.ticket-card {
+  background: url("/assets/card.svg") no-repeat center center / contain;
+  height: 265px;
+  width: 408px;
+}
+
+@media (max-width: 578px) {
+  .ticket-card {
+    background: #8a74f9 url("/assets/card.svg") no-repeat center center /
+      contain !important;
+    width: unset;
+    border-radius: 12.47px;
+  }
+  .input-link {
+    width: fit-content !important;
+  }
+}

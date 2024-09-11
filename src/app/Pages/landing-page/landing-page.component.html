@@ -3,7 +3,7 @@
   style="min-height: 100vh"
 >
   <!-- btns -->
-  <div class="d-flex justify-content-between p-4">
+  <div class="d-flex justify-content-between p-sm-4 p-2 py-4">
     <a
       href=""
       class="bg-light p-1 px-2 rounded-2 text-decoration-none text-black"
@@ -37,7 +37,7 @@
       >
         تذكرة رقم #2342
       </span>
-      <a href="">
+      <a href="" class="me-2">
         <svg
           width="32"
           height="32"
@@ -59,24 +59,24 @@
     </div>
   </div>
   <!-- Card and Chart -->
-  <div class="d-flex flex-wrap flex-column flex-md-row">
+  <div class="d-flex flex-wrap flex-column flex-md-row gap-4 gap-sm-0">
     <app-card></app-card>
     <!--  -->
     <app-chart class="chart"></app-chart>
   </div>
   <!-- Search bar and checkbox -->
-  <div class="d-flex flex-column flex-sm-row justify-content-between p-4">
+  <div class="d-flex flex-column flex-md-row justify-content-between p-4">
     <!-- Checkbox -->
     <div class="d-flex gap-4 align-items-center justify-content-center">
       <a href="" class="button-1">حجز تذكرة جديده</a>
       <div class="d-flex gap-2 align-items-center justify-content-center">
         <span style="font-size: 14px; font-weight: 400">مفعله</span>
-        <p-inputSwitch class="pt-2 switched" />
+        <p-inputSwitch class="custom-control-input pt-2" id="customSwitch1" />
       </div>
     </div>
     <!--  -->
     <div
-      class="d-flex flex-column-reverse flex-sm-row gap-1 justify-content-center align-items-center"
+      class="d-flex flex-column-reverse flex-md-row gap-1 justify-content-center align-items-center"
     >
       <!-- icons -->
       <div class="d-flex gap-1">

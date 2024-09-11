@@ -28,6 +28,7 @@
   background: #8a74f9d4;
 }
 
-.switched:checked {
-  background-color: #8a74f9;
+/*  */
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+  background: #8a74f9 !important;
 }

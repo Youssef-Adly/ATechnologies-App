@@ -103,15 +103,16 @@
         </td>
         <td class="text-center">{{ customer.price | currency }}</td>
         <td class="text-center">{{ customer.ticketNumber }}</td>
-        <td class="d-flex align-items-center gap-2 text-center">
+        <td
+          class="d-flex align-items-center justify-content-end gap-2 text-center"
+          style="width: 160px"
+        >
           <div>
             <span>{{ customer.name }}</span>
             <br />
-            <span
-              style="font-weight: 400; font-size: 13px"
-              class="text-muted"
-              >{{ customer.phone }}</span
-            >
+            <span style="font-weight: 400; font-size: 13px" class="text-muted">
+              {{ customer.phone }}
+            </span>
           </div>
           <p-avatar
             image="https://primefaces.org/cdn/primeng/images/demo/avatar/amyelsner.png"
